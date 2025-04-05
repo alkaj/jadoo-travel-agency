@@ -31,13 +31,13 @@ class HeroSection extends StatelessWidget {
               Row(
                 spacing: 55,
                 children: [
-                Text('Menu 1'),
-                Text('Menu 2'),
-                Text('Menu 3'),
-                Text('Menu 4'),
-                Text('Menu 5'),
-                Text('Menu 6'),
-                Text('Menu 7'),
+                Text('Destinations'),
+                Text('Hotels'),
+                Text('Flights'),
+                Text('Bookings'),
+                Text('Login'),
+                Text('Sign up'),
+                Text('EN'),
               ],)
             ],),
           Row(

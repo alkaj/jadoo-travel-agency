@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jaboo_travel_agency/sections/destinations.dart';
 import 'package:jaboo_travel_agency/sections/hero.dart';
 import 'package:jaboo_travel_agency/sections/services.dart';
 
@@ -14,7 +15,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: SingleChildScrollView(child: Column(children: [HeroSection(), ServicesSection()],),),
+        body: SingleChildScrollView(child: Column(children: [HeroSection(), ServicesSection(), DestinationsSection()],),),
       ),
     );
   }
