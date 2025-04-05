@@ -8,13 +8,15 @@ class HeroSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: whiteColor,
       width: 1440,
       child: Stack(
       children: [
         FittedBox(
           fit: BoxFit.fill,
           child: SvgPicture.asset(
-          'assets/images/hero_decor.svg',
+          'assets/images/hero/hero_decor.svg',
+          width: 1440,
         ),),
       Padding(
             padding: const EdgeInsets.symmetric(horizontal: 96, vertical: 32),
@@ -50,7 +52,7 @@ class HeroSection extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 spacing: 24,
                 children: [
-                  Text('Best destinations around the world', style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: orangeColor, fontWeight: FontWeight.w700),),
+                  Text('Best destinations around the world'.toUpperCase(), style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: orangeColor, fontWeight: FontWeight.w700),),
                   Text('Travel, enjoy and live a new and full life', style: Theme.of(context).textTheme.headlineLarge,),
                   Text('Built wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.',),
                   Row (
@@ -62,7 +64,7 @@ class HeroSection extends StatelessWidget {
                   SizedBox(height: 24,)
                 ],
               ),),
-              Image.asset('assets/images/hero.png', fit: BoxFit.fill, width: MediaQuery.of(context).size.width * 0.5,),
+              Image.asset('assets/images/hero/hero.png', fit: BoxFit.fill, width: MediaQuery.of(context).size.width * 0.5,),
             ],
           )
           ],
