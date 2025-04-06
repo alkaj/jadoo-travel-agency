@@ -22,7 +22,7 @@ Widget DestinationCard({
       padding: EdgeInsets.only(left: 48, right: 48, bottom: 128),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        spacing: 16,
+        spacing: 6,
         children: [Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
