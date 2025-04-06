@@ -4,6 +4,7 @@ import 'package:jaboo_travel_agency/sections/hero.dart';
 import 'package:jaboo_travel_agency/sections/logos.dart';
 import 'package:jaboo_travel_agency/sections/reservations.dart';
 import 'package:jaboo_travel_agency/sections/services.dart';
+import 'package:jaboo_travel_agency/sections/subscription.dart';
 import 'package:jaboo_travel_agency/sections/tesmonials.dart';
 
 void main() {
@@ -28,6 +29,7 @@ class MainApp extends StatelessWidget {
               ReservationsSection(),
               TestimonialsSection(),
               LogosSection(),
+              SubscriptionSection(),
             ],
           ),
         ),

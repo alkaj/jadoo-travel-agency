@@ -27,4 +27,5 @@ flutter:
     - assets/images/reservations/
     - assets/images/testimonials/
     - assets/images/logos/
+    - assets/images/subscription/
     - assets/fonts/
