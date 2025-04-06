@@ -24,4 +24,5 @@ flutter:
     - assets/images/hero/
     - assets/images/services/
     - assets/images/destinations/
+    - assets/images/reservations/
     - assets/fonts/
