@@ -35,6 +35,7 @@ class SubscriptionSection extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 48, vertical: 56),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    spacing: 32,
                     children: [
                       Text(
                         'Subscribe to get information, latest news and other interesting offers about Jadoo',
