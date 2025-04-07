@@ -14,6 +14,7 @@ class FooterSection extends StatelessWidget {
         direction: Axis.horizontal,
         spacing: 64,
         runSpacing: 32,
+        alignment: WrapAlignment.center,
         children: [
           SizedBox(
             width: 208,
@@ -39,7 +40,12 @@ class FooterSection extends StatelessWidget {
             spacing: 16,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Company'),
+              Text(
+                'Company',
+                style: Theme.of(
+                  context,
+                ).textTheme.displaySmall?.copyWith(fontWeight: FontWeight.w900),
+              ),
               SizedBox(height: 24),
               Text('About'),
               Text('Careers'),
@@ -50,7 +56,12 @@ class FooterSection extends StatelessWidget {
             spacing: 16,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Contact'),
+              Text(
+                'Contact',
+                style: Theme.of(
+                  context,
+                ).textTheme.displaySmall?.copyWith(fontWeight: FontWeight.w900),
+              ),
               SizedBox(height: 24),
               Text('About'),
               Text('Careers'),
@@ -61,7 +72,12 @@ class FooterSection extends StatelessWidget {
             spacing: 16,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('More'),
+              Text(
+                'More',
+                style: Theme.of(
+                  context,
+                ).textTheme.displaySmall?.copyWith(fontWeight: FontWeight.w900),
+              ),
               SizedBox(height: 24),
               Text('About'),
               Text('Careers'),

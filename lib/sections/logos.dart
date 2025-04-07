@@ -11,9 +11,9 @@ class LogosSection extends StatelessWidget {
       color: whiteColor,
       width: 1440,
       child: Wrap(
-        spacing: 16,
+        spacing: 32,
         runSpacing: 16,
-        alignment: WrapAlignment.spaceBetween,
+        alignment: WrapAlignment.center,
         crossAxisAlignment: WrapCrossAlignment.center,
         direction: Axis.horizontal,
         children: [

@@ -26,9 +26,12 @@ class DestinationsSection extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineLarge,
               ),
               SizedBox(height: 8),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+              Wrap(
+                direction: Axis.horizontal,
+                runSpacing: 32,
                 spacing: 24,
+                alignment: WrapAlignment.center,
+                crossAxisAlignment: WrapCrossAlignment.center,
                 children: [
                   DestinationCard(
                     image: 'coliseum',

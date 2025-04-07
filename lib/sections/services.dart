@@ -23,9 +23,12 @@ class ServicesSection extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineLarge,
           ),
           SizedBox(height: 8),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            spacing: 24,
+          Wrap(
+            direction: Axis.horizontal,
+            runSpacing: 32,
+            spacing: 32,
+            alignment: WrapAlignment.center,
+            crossAxisAlignment: WrapCrossAlignment.center,
             children: [
               ServiceCard(
                 image: 'parabol',

@@ -53,13 +53,28 @@ class SubscriptionSection extends StatelessWidget {
                                   hintText: 'Enter your email',
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(8),
-                                    borderSide: BorderSide(color: whiteColor),
+                                    borderSide: BorderSide(
+                                      color: Theme.of(context).primaryColor,
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
                             const SizedBox(width: 16),
                             ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                foregroundColor:
+                                    Theme.of(context).colorScheme.onSecondary,
+                                backgroundColor:
+                                    Theme.of(context).colorScheme.secondary,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 32,
+                                  vertical: 22,
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
                               onPressed: () {},
                               child: Text('Subscribe'),
                             ),

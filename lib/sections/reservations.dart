@@ -11,8 +11,12 @@ class ReservationsSection extends StatelessWidget {
       color: whiteColor,
       width: 1440,
       padding: EdgeInsets.symmetric(horizontal: 96, vertical: 32),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Wrap(
+        direction: Axis.horizontal,
+        runSpacing: 32,
+        spacing: 32,
+        alignment: WrapAlignment.center,
+        crossAxisAlignment: WrapCrossAlignment.center,
         children: [
           Flexible(
             child: Column(

@@ -14,11 +14,8 @@ class HeroSection extends StatelessWidget {
       child: Stack(
         children: [
           FittedBox(
-            fit: BoxFit.fill,
-            child: SvgPicture.asset(
-              'assets/images/hero/hero_decor.svg',
-              width: 1440,
-            ),
+            fit: BoxFit.fitWidth,
+            child: Image.asset('assets/images/hero/decor.png', width: 1440),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 96, vertical: 32),
@@ -48,10 +45,10 @@ class HeroSection extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Flexible(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      child: Wrap(
+                        direction: Axis.vertical,
+                        alignment: WrapAlignment.start,
+                        crossAxisAlignment: WrapCrossAlignment.start,
                         spacing: 24,
                         children: [
                           SizedBox(height: 96),
@@ -65,7 +62,7 @@ class HeroSection extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            'Travel, enjoy and live a new and full life',
+                            'Travel, enjoy \nand live a new \nand full life',
                             style: Theme.of(context).textTheme.displayLarge,
                           ),
                           Text(

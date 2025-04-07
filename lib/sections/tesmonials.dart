@@ -12,9 +12,14 @@ class _TestimonialsSection extends State<TestimonialsSection> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 1440,
       padding: EdgeInsets.symmetric(horizontal: 96, vertical: 64),
       color: Colors.white,
-      child: Row(
+      child: Wrap(
+        direction: Axis.horizontal,
+        runSpacing: 32,
+        spacing: 32,
+        alignment: WrapAlignment.center,
         children: [
           Flexible(
             child: Column(

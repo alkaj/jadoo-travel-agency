@@ -35,6 +35,7 @@ class MainApp extends StatelessWidget {
               LogosSection(),
               SubscriptionSection(),
               FooterSection(),
+              SizedBox(width: double.infinity),
             ],
           ),
         ),
