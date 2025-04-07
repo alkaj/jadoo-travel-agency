@@ -90,6 +90,7 @@ class FooterSection extends StatelessWidget {
             children: [
               Row(
                 spacing: 16,
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   Image.asset('assets/images/footer/facebook.png', width: 48),
                   Image.asset('assets/images/footer/instagram.png', width: 48),
@@ -99,6 +100,7 @@ class FooterSection extends StatelessWidget {
               Text('Discover our app'),
               Row(
                 spacing: 16,
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   Image.asset(
                     'assets/images/footer/googleplay.png',

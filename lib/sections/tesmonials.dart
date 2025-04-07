@@ -21,7 +21,8 @@ class _TestimonialsSection extends State<TestimonialsSection> {
         spacing: 32,
         alignment: WrapAlignment.center,
         children: [
-          Flexible(
+          SizedBox(
+            width: 600,
             child: Column(
               spacing: 32,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -45,7 +46,8 @@ class _TestimonialsSection extends State<TestimonialsSection> {
               ],
             ),
           ),
-          Flexible(
+          SizedBox(
+            width: 500,
             child: Stack(
               children: [
                 Container(

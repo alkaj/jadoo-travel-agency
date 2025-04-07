@@ -18,7 +18,8 @@ class ReservationsSection extends StatelessWidget {
         alignment: WrapAlignment.center,
         crossAxisAlignment: WrapCrossAlignment.center,
         children: [
-          Flexible(
+          SizedBox(
+            width: 600,
             child: Column(
               spacing: 32,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -54,7 +55,10 @@ class ReservationsSection extends StatelessWidget {
           ),
           Flexible(
             fit: FlexFit.tight,
-            child: Image.asset('assets/images/reservations/illustration.png'),
+            child: Image.asset(
+              'assets/images/reservations/illustration.png',
+              width: 500,
+            ),
           ),
         ],
       ),
