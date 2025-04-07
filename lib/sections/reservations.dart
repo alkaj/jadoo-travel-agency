@@ -19,8 +19,14 @@ class ReservationsSection extends StatelessWidget {
               spacing: 32,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Easy and fast'),
-                Text('Book your next trip in 3 easy steps'),
+                Text(
+                  'Easy and fast',
+                  style: Theme.of(context).textTheme.displaySmall,
+                ),
+                Text(
+                  'Book your next trip in 3 easy steps',
+                  style: Theme.of(context).textTheme.headlineLarge,
+                ),
                 ReservationCard(
                   image: 'path',
                   title: 'Choose Destination',

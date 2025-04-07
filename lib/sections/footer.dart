@@ -21,7 +21,13 @@ class FooterSection extends StatelessWidget {
               spacing: 16,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Jadoo.'),
+                Text(
+                  'Jadoo.',
+                  style: Theme.of(context).textTheme.displaySmall?.copyWith(
+                    fontSize: 44,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
                 SizedBox(height: 24),
                 Text(
                   'Book your trip in minute, get full Control for much longer.',

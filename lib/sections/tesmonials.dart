@@ -21,8 +21,14 @@ class _TestimonialsSection extends State<TestimonialsSection> {
               spacing: 32,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Testimonials'),
-                Text('What people say about us'),
+                Text(
+                  'Testimonials',
+                  style: Theme.of(context).textTheme.displaySmall,
+                ),
+                Text(
+                  'What people say \nabout us',
+                  style: Theme.of(context).textTheme.headlineLarge,
+                ),
                 Row(
                   spacing: 16,
                   children: [

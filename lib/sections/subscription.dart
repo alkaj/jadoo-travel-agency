@@ -39,6 +39,7 @@ class SubscriptionSection extends StatelessWidget {
                     children: [
                       Text(
                         'Subscribe to get information, latest news and other interesting offers about Jadoo',
+                        style: Theme.of(context).textTheme.headlineMedium,
                       ),
                       Form(
                         child: Row(

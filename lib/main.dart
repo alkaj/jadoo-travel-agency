@@ -7,6 +7,7 @@ import 'package:jaboo_travel_agency/sections/reservations.dart';
 import 'package:jaboo_travel_agency/sections/services.dart';
 import 'package:jaboo_travel_agency/sections/subscription.dart';
 import 'package:jaboo_travel_agency/sections/tesmonials.dart';
+import 'package:jaboo_travel_agency/config/themes/light.dart';
 
 void main() {
   runApp(const MainApp());
@@ -17,8 +18,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.light,
+      theme: lightTheme,
       home: Scaffold(
         body: SingleChildScrollView(
           child: Column(
