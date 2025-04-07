@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jaboo_travel_agency/sections/destinations.dart';
+import 'package:jaboo_travel_agency/sections/footer.dart';
 import 'package:jaboo_travel_agency/sections/hero.dart';
 import 'package:jaboo_travel_agency/sections/logos.dart';
 import 'package:jaboo_travel_agency/sections/reservations.dart';
@@ -30,6 +31,7 @@ class MainApp extends StatelessWidget {
               TestimonialsSection(),
               LogosSection(),
               SubscriptionSection(),
+              FooterSection(),
             ],
           ),
         ),
